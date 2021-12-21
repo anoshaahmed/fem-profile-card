@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --cyan: hsl(185, 75%, 39%);
+    --desat-blue: hsl(229, 23%, 23%);
+    --gray-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 350px;
+    min-height: 375px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 40px 100px hsla(229, 23%, 23%, 0.3);
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position: contain;
+}
+
+main .avatar {
+    align-self: center;
+    background-image: url(images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105px;
+    width: 105px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: 87.5px;
+}
+
+main section {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section .name-age {
+    display: flex;
+}
+
+main section .name-age h1 {
+    font-size: 18px;
+    padding: 0 9px 0 0;
+    color: var(--desat-blue);
+}
+
+main section .name-age p {
+    font-size: 18px;
+    color: var(--gray-blue);
+}
+
+main section > p {
+    font-size: 14px;
+    padding-top: 8px;
+    color: var(--gray-blue);
+}
+
+main .divider {
+    height: 0.5px;
+    width: 100%;
+    background-color: var(--dark-gray);
+    opacity: 0.3;
+    margin-top: 25.5px;
+}
+
+main .stats {
+    align-self: center;
+    width: 100%;
+    padding: 24.5px 48px;
+    display: flex;
+}
+
+main .stats .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .stats .container:nth-of-type(2) {
+    padding-left: 48px;
+}
+
+main .stats .container:last-of-type {
+    padding-left: 58px;
+}
+
+main .stats .container h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+main .stats .container p {
+    padding-top: 4.5px;
+    font-size: 10px;
+    color: var(--gray-blue);
+    letter-spacing: 1.5px;
+}
+
+footer {
+    display: block;
+    justify-self: center;
+    align-self: flex-end;
+    position: absolute;
+    font-size: 10px;
+    text-align: center;
+    color: var(--gray-blue);
+    margin-bottom: 3px;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--gray-blue);
+}
+
+@media (max-width:376px) {
+    body {
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: var(--cyan);
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat;
+        background-position: right 35vw bottom 50vh, left 40vw top 45vh;
+    }
+
+    main {
+        width: 326px;
+    }
+
+    main .stats {
+        padding: 24.5px 42px;
+    }
+
+    main .stats .container:nth-of-type(2) {
+        padding-left: 42px;
+    }
+    
+    main .stats .container:last-of-type {
+        padding-left: 47px;
+    }
+
+    footer {
+        display: none;
+    }
+}
