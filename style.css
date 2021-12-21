@@ -84,7 +84,7 @@ main section > p {
 }
 
 main .divider {
-    height: 0.6px;
+    height: 0.7px;
     width: 100%;
     background-color: var(--dark-gray);
     opacity: 0.3;
