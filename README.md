@@ -31,7 +31,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [FrontEnd Mentor: My Solution](https://www.frontendmentor.io/solutions/profile-card-component-using-flexbox-TSRY-NyU1)
-- Live Site URL: [GitHub Page: Profile Card Component](https://anoshaahmed.github.io/profile-card/)
+- Live Site URL: [GitHub Page: Profile Card Component](https://anoshaahmed.github.io/fem-profile-card/)
 
 ## My process
 
